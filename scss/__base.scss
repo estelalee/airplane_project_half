@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // color: #464646;
+    /*無法在定義全文字顏色後改變hover顏色*/
+    
+
+    a:hover {
+        color: $brandcolor;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+
+// html{
+//     font-size: 10px;
+// }

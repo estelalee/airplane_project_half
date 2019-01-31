@@ -1,0 +1,157 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*無法在定義全文字顏色後改變hover顏色*/
+}
+* a:hover {
+  color: #217484;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.content-container {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.function-container__bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+
+.function-container__ul {
+  list-style: none;
+  display: flex;
+}
+.function-container__ul li {
+  margin-left: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.function-container__arrow {
+  position: relative;
+  top: -2px;
+}
+
+.function-container__search {
+  position: absolute;
+  right: 5px;
+}
+
+.function-container__facebook {
+  font-size: 21px;
+  color: darkblue;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.menu-container__logo {
+  display: flex;
+}
+
+.menu-container__content {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.menu-container__content li {
+  padding: 0 40px;
+  border-right: 1px #464646 solid;
+}
+.menu-container__content a {
+  text-decoration: none;
+  color: black;
+}
+.menu-container__content a:hover {
+  color: #217484;
+}
+
+.content_container2 {
+  background-color: #f2f2f2;
+}
+
+.booking {
+  max-width: 55%;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.booking_title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-size: 2em;
+  color: #217484;
+}
+
+.booking_block {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+.booking_block li {
+  margin-right: 50px;
+}
+
+.airport_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.airport {
+  width: 45%;
+  height: 40px;
+  margin-top: 60px;
+  display: inline-block;
+}
+
+.date_block {
+  display: flex;
+  justify-content: space-between;
+}
+.date_block input[type=date] {
+  width: 45%;
+  height: 40px;
+  margin-top: 60px;
+}
+
+.member_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.member {
+  width: 30%;
+  height: 40px;
+  margin-top: 60px;
+}
+
+button {
+  width: 30%;
+  height: 50px;
+  font-size: 1.5rem;
+  margin-top: 60px;
+  border-radius: 5px;
+  background: linear-gradient(#217484, #0b4e5b);
+  color: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

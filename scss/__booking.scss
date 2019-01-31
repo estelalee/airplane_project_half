@@ -1,0 +1,86 @@
+.content_container2 {
+    background-color: #f2f2f2;
+
+}
+
+.booking {
+    max-width: 55%;
+    // border: 1px black solid;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.booking_title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 2em;
+    color: $brandcolor
+}
+
+.booking_block {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+
+    li {
+        margin-right: 50px;
+    }
+}
+
+// .airport_title{
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+.airport_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.airport {
+    width: 45%;
+    height: 40px;
+    margin-top: 60px;
+    display: inline-block;
+
+}
+
+.date_block {
+    display: flex;
+    justify-content: space-between;
+
+    input[type="date"] {
+        width: 45%;
+        height: 40px;
+        margin-top: 60px;
+    }
+}
+
+.member_block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.member{
+    width:30%;
+    height:40px;
+    margin-top:60px;
+}
+
+button{
+    width:30%;
+    height:50px;
+    font-size: 1.5rem;
+    margin-top:60px;
+    border-radius: 5px;
+    background: linear-gradient(#217484,#0b4e5b);
+    color:white;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    
+}

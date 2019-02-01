@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TRI Airlines</title>
 
+    <!-- TODO: 下面兩個檔案根本不存在啊啊啊啊
+    我還花了一個小時在debug(囧rz).....你是在埋梗嗎？ -->
     <link rel="stylesheet" href="./src/css/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./src/css/slick-1.8.1/slick/slick-theme.css" />
 
@@ -75,8 +77,8 @@
 
 
     <!-- slideshow，不同尺寸的圖就會崩壞 -->
-    <!-- TODO: 這邊有奇怪的bug，不知道為什麼你的網頁出現了橫向的拖動條，而且很長
-    應該是slick造成的，但我暫時沒找到問題出在哪裡，需要多點時間 -->
+    <!-- TODO:  slick的每一個滑動夜的高度都是按照內容元素決定的
+    所以如果只有圖片、而圖片的長寬還不同的話，解決的辦法是每個滑動頁都做成固定大小的div，並把圖片設成那個div的background -->
 
     <div class="carousel">
         <img src="./src/assets_index_2019-01-06/slideshow.png" alt="slideshow_img">

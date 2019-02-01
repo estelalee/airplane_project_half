@@ -4,9 +4,13 @@
 }
 
 .booking {
+    // TODO: 如果使用了max-width就不適合用百分比當單位
     max-width: 55%;
     // border: 1px black solid;
     margin: 0 auto;
+
+    // TODO: 3 - 訂位購票跟slideshow之間有一個神秘的空間
+    // ↓在這裡
     padding-top: 70px;
     padding-bottom: 70px;
 }
@@ -42,7 +46,11 @@
 .airport {
     width: 45%;
     height: 40px;
+    // TODO: 這個margin-top應該是整個flex box和相鄰的flex box的間距，
+    // 因此邏輯上來說應該要下在.airport_block裡面。下面同理
     margin-top: 60px;
+
+    // TODO: .airport已經是flex的子元素了，因此這個樣式是無效的
     display: inline-block;
 
 }
@@ -51,6 +59,7 @@
     display: flex;
     justify-content: space-between;
 
+    // TODO: 選擇器不是用得很溜嗎，當初還在幹話說聽不懂
     input[type="date"] {
         width: 45%;
         height: 40px;

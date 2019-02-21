@@ -9,9 +9,7 @@
 
     <!-- TODO: 下面兩個檔案根本不存在啊啊啊啊
     我還花了一個小時在debug(囧rz).....你是在埋梗嗎？ -->
-    <link rel="stylesheet" href="./src/css/slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./src/css/slick-1.8.1/slick/slick-theme.css" />
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
@@ -81,9 +79,15 @@
     所以如果只有圖片、而圖片的長寬還不同的話，解決的辦法是每個滑動頁都做成固定大小的div，並把圖片設成那個div的background -->
 
     <div class="carousel">
-        <img src="./src/assets_index_2019-01-06/slideshow.png" alt="slideshow_img">
-        <img src="https://picsum.photos/1920/500" alt="slideshow_img">
-        <img src="https://picsum.photos/1910/500" alt="slideshow_img">
+        <div class="">
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
     </div>
 
 
@@ -124,47 +128,44 @@
 
 
             <div class="airport_block">
-                <!-- <div class=""> -->
-                <!-- <h4>出發地</h4> -->
-                <select class="airport">
-                    <option value="0"> - </option>
-                    <!-- TODO: 居然可以這樣用，我以前都不知道！你太讚了 -->
-                    <optgroup label="台灣">
-                        <option value="1">台北(桃園機場) - TPE</option>
-                        <option value="2">台北(松山機場) - TSA</option>
-                        <option value="3">台中 - RMQ</option>
-                        <option value="4">高雄 - KHH</option>
-                    </optgroup>
-                    <optgroup label="港澳">
-                        <option value="5">香港</option>
-                        <option value="6">澳門</option>
-                    </optgroup>
-                </select>
-                <!-- </div> -->
-                <!-- <div> -->
-                <!-- <h4>目的地</h4> -->
-                <select class="airport">
-                    <option value="0"> - </option>
-                    <optgroup label="中國大陸">
-                        <option value="1">廣州</option>
-                        <option value="2">深圳</option>
-                        <option value="3">北京</option>
-                        <option value="4">重慶</option>
-                    </optgroup>
-                    <optgroup label="日韓">
-                        <option value="5">東京(羽田機場) - HND</option>
-                        <option value="6">首爾(仁川機場) - ICN</option>
-                        <option value="7">福岡 - FUK</option>
-                        <option value="8">首爾(金浦機場) - GMP</option>
-                    </optgroup>
-                </select>
-                <!-- </div> -->
+                <div class="">
+                    <h4>出發地</h4>
+                    <select class="airport">
+                        <option value="0"> - </option>
+                        <optgroup label="台灣">
+                            <option value="1">台北(桃園機場) - TPE</option>
+                            <option value="2">台北(松山機場) - TSA</option>
+                            <option value="3">台中 - RMQ</option>
+                            <option value="4">高雄 - KHH</option>
+                        </optgroup>
+                        <optgroup label="港澳">
+                            <option value="5">香港</option>
+                            <option value="6">澳門</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <h4>目的地</h4>
+                    <select class="airport">
+                        <option value="0"> - </option>
+                        <optgroup label="中國大陸">
+                            <option value="1">廣州</option>
+                            <option value="2">深圳</option>
+                            <option value="3">北京</option>
+                            <option value="4">重慶</option>
+                        </optgroup>
+                        <optgroup label="日韓">
+                            <option value="5">東京(羽田機場) - HND</option>
+                            <option value="6">首爾(仁川機場) - ICN</option>
+                            <option value="7">福岡 - FUK</option>
+                            <option value="8">首爾(金浦機場) - GMP</option>
+                        </optgroup>
+                    </select>
+                </div>
 
             </div>
 
             <div class="date_block">
-                <!-- TODO: 5 - 嗯 input的樣式我只會改長寬 該死.
-                你是想改它的border嗎？ -->
                 <!-- <h4>去程日期</h4> -->
                 <input type="date" name="outbound" id="">
                 <!-- <h4>回程日期</h4> -->
@@ -213,6 +214,246 @@
     </div>
 
 
+    <!--explore-->
+
+    <div class="explore">
+        <div class="explore__content">
+            <p class="explore__title">深入探索</p>
+            <div class="explore__selectors">
+                <ul>
+                    <li class="explore__first">全部</li>
+                    <li class="explore__area">香港澳門</li>
+                    <li class="explore__area">中國大陸</li>
+                    <li class="explore__area">東南亞</li>
+                    <li class="explore__area">東北亞</li>
+                    <li class="explore__area">美洲</li>
+                    <li class="explore__area">歐洲</li>
+                    <li class="explore__last">紐澳</li>
+                </ul>
+            </div>
+            <div class="explore__slide">
+                <div>
+                    <div class="explore__block">
+                        <img src="./src/assets_index_2019-01-06/p-1.png" alt="">
+                        <div class="explore__block__text">
+                            <p>桃園 - 大阪</p>
+                            <p><span>TWD</span> 2,198 <span>(起)</span></p>
+                            <p>
+                                <日本>關西大阪心齋橋道頓掘，有吃不完的餃子，
+                                    看不完的櫻花妹，還有讓你走到鐵腿的不夜城。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="explore__block">
+                        <img src="./src/assets_index_2019-01-06/p-4.png" alt="">
+                        <div class="explore__block__text">
+                            <p>桃園 - 阿姆斯特丹</p>
+                            <p><span>TWD</span> 18,198 <span>(起)</span></p>
+                            <p>
+                                <荷蘭>其實我不知道，這裡會有什麼，但應該是很
+                                    漂亮的地方吧？真想去看一看呢
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="explore__block">
+                        <img src="./src/assets_index_2019-01-06/p-2.png" alt="">
+                        <div class="explore__block__text">
+                            <p>桃園 - 溫哥華</p>
+                            <p><span>TWD</span> 20,198 <span>(起)</span></p>
+                            <p>
+                                <加拿大>讓你喝溫哥華的好水，吃溫哥華的餐點，
+                                    住在度假別墅，像溫哥華當地人一樣生活？
+                            </p>
+                        </div>
+                    </div>
+                    <div class="explore__block">
+                        <img src="./src/assets_index_2019-01-06/p-5.png" alt="">
+                        <div class="explore__block__text">
+                            <p>赤道 - 極地</p>
+                            <p><span>TWD</span> 21,198 <span>(起)</span></p>
+                            <p>
+                                <北極>在天寒地凍的銀白世界，如果你以為我是在
+                                    找企鵝那就大錯特錯了，其實是我的手機掉了...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="explore__block">
+                        <img src="./src/assets_index_2019-01-06/p-3.png" alt="">
+                        <div class="explore__block__text">
+                            <p>松山 - 杭州</p>
+                            <p><span>TWD</span> 4,198 <span>(起)</span>)</p>
+                            <p>
+                                <中國>號稱中國最美的城市 - 杭州，西湖，每一步
+                                    都走在如詩如畫的風景裡。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="explore__block">
+                        <img src="./src/assets_index_2019-01-06/p-6.png" alt="">
+                        <div class="explore__block__text">
+                            <p>桃園 - 布里斯本</p>
+                            <p><span>TWD</span> 11,198 <span>(起)</span></p>
+                            <p>
+                                <紐奧>說好的肌肉袋鼠在哪裡呢？既然沒有的話就
+                                    來張網美照再離開吧～
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div>
+                    <div class="explore__block">
+                        <img src="https://picsum.photos/320/180" alt="">
+                        <div class="explore__block__text">
+                            <p>桃園 - 大阪</p>
+                            <p>TWD 2,198 (起)</p>
+                            <p>
+                                <日本>關西大阪心齋橋道頓掘，有吃不完的餃子，
+                                    看不完的櫻花妹，還有讓你走到鐵腿的不夜城。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="explore__block">
+                        <img src="https://picsum.photos/320/180" alt="">
+                        <div class="explore__block__text">
+                            <p>桃園 - 阿姆斯特丹</p>
+                            <p><span>TWD</span> 12,198 <span>(起)</span></p>
+                            <p>
+                                <荷蘭>其實我不知道，這裡會有什麼，但應該是很
+                                    漂亮的地方吧？真想去看一看呢
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="explore__block">
+                        <img src="https://picsum.photos/320/180" alt="">
+                        <div class="explore__block__text">
+                            <p>桃園 - 溫哥華</p>
+                            <p><span>TWD</span> 20,198 <span>(起)</span></p>
+                            <p>
+                                <加拿大>讓你喝溫哥華的好水，吃溫哥華的餐點，
+                                    住在度假別墅，像溫哥華當地人一樣生活？
+                            </p>
+                        </div>
+                    </div>
+                    <div class="explore__block">
+                        <img src="./src/assets_index_2019-01-06/p-5.png" alt="">
+                        <div class="explore__block__text">
+                            <p>赤道 - 極地</p>
+                            <p>TWD 8,198 (起)</p>
+                            <p>
+                                <北極>在天寒地凍的銀白世界，如果你以為我是在
+                                    找企鵝那就大錯特錯了，其實是我的手機掉了...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="explore__block">
+                        <img src="./src/assets_index_2019-01-06/p-3.png" alt="">
+                        <div class="explore__block__text">
+                            <p>松山 - 杭州</p>
+                            <p><span>TWD</span> 4,198 <span>(起)</span></p>
+                            <p>
+                                <中國>號稱中國最美的城市 - 杭州，西湖，每一步
+                                    都走在如詩如畫的風景裡。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="explore__block">
+                        <img src="./src/assets_index_2019-01-06/p-6.png" alt="">
+                        <div class="explore__block__text">
+                            <p>桃園 - 布里斯本</p>
+                            <p><span>TWD</span> 11,198 <span>(起)</span></p>
+                            <p>
+                                <紐奧>說好的肌肉袋鼠在哪裡呢？既然沒有的話就
+                                    來張網美照再離開吧～
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div>
+                    <div class="explore__block">
+                        <img src="./src/assets_index_2019-01-06/p-1.png" alt="">
+                        <div class="explore__block__text">
+                            <p>桃園 - 大阪</p>
+                            <p><span>TWD</span> 2,198 <span>(起)</span></p>
+                            <p>
+                                <日本>關西大阪心齋橋道頓掘，有吃不完的餃子，
+                                    看不完的櫻花妹，還有讓你走到鐵腿的不夜城。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="explore__block">
+                        <img src="./src/assets_index_2019-01-06/p-4.png" alt="">
+                        <div class="explore__block__text">
+                            <p>桃園 - 阿姆斯特丹</p>
+                            <p><span>TWD</span> 11,198 <span>(起)</span></p>
+                            <p>
+                                <荷蘭>其實我不知道，這裡會有什麼，但應該是很
+                                    漂亮的地方吧？真想去看一看呢
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="explore__block">
+                        <img src="./src/assets_index_2019-01-06/p-2.png" alt="">
+                        <div class="explore__block__text">
+                            <p>桃園 - 溫哥華</p>
+                            <p><span>TWD</span> 20,198 <span>(起)</span></p>
+                            <p>
+                                <加拿大>讓你喝溫哥華的好水，吃溫哥華的餐點，
+                                    住在度假別墅，像溫哥華當地人一樣生活？
+                            </p>
+                        </div>
+                    </div>
+                    <div class="explore__block">
+                        <img src="https://picsum.photos/320/180" alt="">
+                        <div class="explore__block__text">
+                            <p>赤道 - 極地</p>
+                            <p><span>TWD</span> 21,198 <span>(起)</span></p>
+                            <p>
+                                <北極>在天寒地凍的銀白世界，如果你以為我是在
+                                    找企鵝那就大錯特錯了，其實是我的手機掉了...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="explore__block">
+                        <img src="https://picsum.photos/320/180" alt="">
+                        <div class="explore__block__text">
+                            <p>松山 - 杭州</p>
+                            <p><span>TWD</span> 4,198 <span>(起)</span></p>
+                            <p>
+                                <中國>號稱中國最美的城市 - 杭州，西湖，每一步
+                                    都走在如詩如畫的風景裡。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="explore__block">
+                        <img src="https://picsum.photos/320/180" alt="">
+                        <div class="explore__block__text">
+                            <p>桃園 - 布里斯本</p>
+                            <p><span>TWD</span> 11,198 <span>(起)</span></p>
+                            <p>
+                                <紐奧>說好的肌肉袋鼠在哪裡呢？既然沒有的話就
+                                    來張網美照再離開吧～
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 

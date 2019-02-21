@@ -1,6 +1,7 @@
-// .function-container{
-//     box-shadow: 20px 0 #000000;
-// }
+.function-container{
+    // box-shadow: 20px 0 #000000;
+    border-bottom:1px #eeeeee solid;
+}
 
 .content-container {
     max-width: $content-width;
@@ -54,7 +55,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 10px;
+    padding: 10px;
+    // margin-top:13px;
 }
 
 .menu-container__logo {

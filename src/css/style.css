@@ -3,12 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #464646;
   /*無法在定義全文字顏色後改變hover顏色*/
 }
 * a:hover {
   color: #217484;
   font-weight: 500;
   cursor: pointer;
+}
+
+.function-container {
+  border-bottom: 1px #eeeeee solid;
 }
 
 .content-container {
@@ -54,7 +59,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 .menu-container__logo {
@@ -152,6 +157,80 @@ button {
 .button {
   display: flex;
   justify-content: center;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel div {
+  width: 100%;
+  height: 500px;
+}
+
+.carousel div:nth-of-type(1) {
+  background: url(/src/assets_index_2019-01-06/slideshow.png);
+}
+
+.carousel div:nth-of-type(2) {
+  background: url(https://picsum.photos/1920/900);
+  background-position: 50% 50%;
+}
+
+.carousel div:nth-of-type(3) {
+  background: url(https://picsum.photos/1000/500);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.explore__title {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0 50px 0;
+  font-size: 2em;
+  color: #217484;
+}
+
+.explore__content {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.explore__content ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.explore__area {
+  padding: 0 44px 0 44px;
+  border-right: 1px #464646 solid;
+}
+
+.explore__block {
+  width: 320px;
+  padding-top: 50px;
+}
+
+.explore__block__text {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.explore__block__text :nth-last-child(1) {
+  padding-top: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.explore__slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

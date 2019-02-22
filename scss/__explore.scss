@@ -6,13 +6,34 @@
     color: $brandcolor
 }
 
+.explore__selectors {
+    margin-bottom: 32px;
+    padding: 0 12px;
+
+    li {
+        flex-grow: 1;
+        text-align: center;
+    }
+}
+
+.explore__selectors .explore__first {
+    text-align: left;
+}
+
+.explore__selectors .explore__last {
+    text-align: right;
+}
+
 // TODO: 這邊使用width: 55%會跟下面的.explore__block{ width: 320px; }衝突到。
 // 由於slick設定一次會顯示3組內容，因此整個.explore__content最少寬度不得少於960px
 // 但現在，當頁面縮放到一定程度時，width: 55%的寬度會開始小於960px
 .explore__content{
-    width: 55%;
+    width: 90%;
     margin: 0 auto;
 
+    @media screen and (max-width: 600px){
+        width: 80%;
+    }
 }
 
 .explore__content ul {
@@ -24,7 +45,7 @@
 
 // TODO: 為什麼.explore__last沒有設定padding呢？
 .explore__area{
-    padding: 0 44px 0 44px;
+    // padding: 0 2vw;
     border-right: 1px $secondcolor solid;
 }
 
@@ -33,8 +54,8 @@
 // 一旦發生便會造成破版。
 // 這邊其實可以不規定.explore__block的寬度，只規定外層的.explore__content寬度。slick會自動縮放寬度到能容納三組內容為止
 .explore__block{
-    width: 320px;
-    padding-top: 50px;
+    // width: 320px;
+    padding: 0 12px;
     // img{
     //     width:300px;
     // }
@@ -63,4 +84,25 @@
 // 若真的要做成全域設定，請把樣式放在base.scss裡面；或是在這邊使用.explore__block__text span{}來代替使用span{}
 span{
     font-size: 14px;
+}
+
+
+
+// arrows
+.explore__arrow {
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.explore__prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.explore__next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
 }

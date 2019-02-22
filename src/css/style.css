@@ -12,6 +12,10 @@
   cursor: pointer;
 }
 
+img {
+  width: 100%;
+}
+
 .function-container {
   border-bottom: 1px #eeeeee solid;
 }
@@ -191,9 +195,31 @@ button {
   color: #217484;
 }
 
+.explore__selectors {
+  margin-bottom: 32px;
+  padding: 0 12px;
+}
+.explore__selectors li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.explore__selectors .explore__first {
+  text-align: left;
+}
+
+.explore__selectors .explore__last {
+  text-align: right;
+}
+
 .explore__content {
-  width: 55%;
+  width: 90%;
   margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .explore__content {
+    width: 80%;
+  }
 }
 
 .explore__content ul {
@@ -203,13 +229,11 @@ button {
 }
 
 .explore__area {
-  padding: 0 44px 0 44px;
   border-right: 1px #464646 solid;
 }
 
 .explore__block {
-  width: 320px;
-  padding-top: 50px;
+  padding: 0 12px;
 }
 
 .explore__block__text {
@@ -231,6 +255,24 @@ button {
 
 span {
   font-size: 14px;
+}
+
+.explore__arrow {
+  max-width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.explore__prev {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+.explore__next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

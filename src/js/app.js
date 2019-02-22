@@ -12,6 +12,19 @@ $('.explore__slide').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    arrows: false,
+    arrows: true,
     autoplay: false,
+    prevArrow: ".explore__prev",
+    nextArrow: ".explore__next",
+    responsive: [{
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
 });

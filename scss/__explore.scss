@@ -6,6 +6,9 @@
     color: $brandcolor
 }
 
+// TODO: 這邊使用width: 55%會跟下面的.explore__block{ width: 320px; }衝突到。
+// 由於slick設定一次會顯示3組內容，因此整個.explore__content最少寬度不得少於960px
+// 但現在，當頁面縮放到一定程度時，width: 55%的寬度會開始小於960px
 .explore__content{
     width: 55%;
     margin: 0 auto;
@@ -19,11 +22,16 @@
     justify-content: space-evenly;
 }
 
+// TODO: 為什麼.explore__last沒有設定padding呢？
 .explore__area{
     padding: 0 44px 0 44px;
     border-right: 1px $secondcolor solid;
 }
 
+
+// TODO: 如同上面提到的，當頁面縮放到一定寬度時，父元素會無法容納三個.explore__block共960px的寬度
+// 一旦發生便會造成破版。
+// 這邊其實可以不規定.explore__block的寬度，只規定外層的.explore__content寬度。slick會自動縮放寬度到能容納三組內容為止
 .explore__block{
     width: 320px;
     padding-top: 50px;
@@ -51,6 +59,8 @@
 
 }
 
+// TODO: 這邊只下span{}會變成全域設定，若以後在別的地方使用到span就會不小心套用到這個設定
+// 若真的要做成全域設定，請把樣式放在base.scss裡面；或是在這邊使用.explore__block__text span{}來代替使用span{}
 span{
     font-size: 14px;
 }
